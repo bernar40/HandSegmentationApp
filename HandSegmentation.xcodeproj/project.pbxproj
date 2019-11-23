@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A7039A82389E35E0026AFB9 /* Pods_ObjectDetection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ABEE81A6A17A4178926DD65 /* Pods_ObjectDetection.framework */; };
+		5A7039A92389E35E0026AFB9 /* Pods_ObjectDetection.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9ABEE81A6A17A4178926DD65 /* Pods_ObjectDetection.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5A7261132386418B004A3559 /* TFLiteExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7261122386418B004A3559 /* TFLiteExtension.swift */; };
+		5A7261152386420E004A3559 /* UIKitExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7261142386420E004A3559 /* UIKitExtension.swift */; };
+		5A7261192387829E004A3559 /* hands_labels.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A7261182387829E004A3559 /* hands_labels.json */; };
+		5ABC9C5C2385DE820022EA9B /* ImageSegmentator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABC9C5B2385DE820022EA9B /* ImageSegmentator.swift */; };
+		5AE934A32389DC0400614565 /* hands_finetunning_mobilenetv2_2019-11-20 01_54_18.774101.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 5AE934A22389DC0400614565 /* hands_finetunning_mobilenetv2_2019-11-20 01_54_18.774101.tflite */; };
+		AA756E652150C996004BB0BC /* CameraFeedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA756E642150C996004BB0BC /* CameraFeedManager.swift */; };
+		AA9AC59F212D39FC000B4E9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9AC59E212D39FC000B4E9D /* AppDelegate.swift */; };
+		AA9AC5A4212D39FC000B4E9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA9AC5A2212D39FC000B4E9D /* Main.storyboard */; };
+		AA9AC5A6212D39FD000B4E9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA9AC5A5212D39FD000B4E9D /* Assets.xcassets */; };
+		AA9AC5A9212D39FD000B4E9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA9AC5A7212D39FD000B4E9D /* LaunchScreen.storyboard */; };
+		AA9AC5D7212D43E0000B4E9D /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9AC5D5212D43E0000B4E9D /* PreviewView.swift */; };
+		AA9AC5E2212D4520000B4E9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9AC5E1212D4520000B4E9D /* ViewController.swift */; };
+		AAAB09702189838A0015A1F2 /* CVPixelBufferExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAB096F2189838A0015A1F2 /* CVPixelBufferExtension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5A7039AA2389E35E0026AFB9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5A7039A92389E35E0026AFB9 /* Pods_ObjectDetection.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		216119B21B85894DC4B75FB9 /* Pods-ObjectDetection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectDetection.debug.xcconfig"; path = "Target Support Files/Pods-ObjectDetection/Pods-ObjectDetection.debug.xcconfig"; sourceTree = "<group>"; };
+		5A7261122386418B004A3559 /* TFLiteExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFLiteExtension.swift; sourceTree = "<group>"; };
+		5A7261142386420E004A3559 /* UIKitExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitExtension.swift; sourceTree = "<group>"; };
+		5A7261182387829E004A3559 /* hands_labels.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hands_labels.json; sourceTree = "<group>"; };
+		5ABC9C5B2385DE820022EA9B /* ImageSegmentator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSegmentator.swift; sourceTree = "<group>"; };
+		5AE934A22389DC0400614565 /* hands_finetunning_mobilenetv2_2019-11-20 01_54_18.774101.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = "hands_finetunning_mobilenetv2_2019-11-20 01_54_18.774101.tflite"; sourceTree = "<group>"; };
+		6E18C520932C79396E5DB283 /* Pods-ObjectDetection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectDetection.release.xcconfig"; path = "Target Support Files/Pods-ObjectDetection/Pods-ObjectDetection.release.xcconfig"; sourceTree = "<group>"; };
+		9ABEE81A6A17A4178926DD65 /* Pods_ObjectDetection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjectDetection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA756E642150C996004BB0BC /* CameraFeedManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraFeedManager.swift; sourceTree = "<group>"; };
+		AA9AC59B212D39FC000B4E9D /* HandSegmentation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HandSegmentation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA9AC59E212D39FC000B4E9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AA9AC5A3212D39FC000B4E9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AA9AC5A5212D39FD000B4E9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA9AC5A8212D39FD000B4E9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AA9AC5AA212D39FD000B4E9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA9AC5D5212D43E0000B4E9D /* PreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
+		AA9AC5E1212D4520000B4E9D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AAAB096F2189838A0015A1F2 /* CVPixelBufferExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVPixelBufferExtension.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA9AC598212D39FC000B4E9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A7039A82389E35E0026AFB9 /* Pods_ObjectDetection.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9D136F869057C25AFCCF626F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9ABEE81A6A17A4178926DD65 /* Pods_ObjectDetection.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D9719774F9F8437868BF530 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				216119B21B85894DC4B75FB9 /* Pods-ObjectDetection.debug.xcconfig */,
+				6E18C520932C79396E5DB283 /* Pods-ObjectDetection.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AA09263B212D730700D5890F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5AE934A22389DC0400614565 /* hands_finetunning_mobilenetv2_2019-11-20 01_54_18.774101.tflite */,
+				5A7261182387829E004A3559 /* hands_labels.json */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AA756E672150CD7C004BB0BC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AAAB096F2189838A0015A1F2 /* CVPixelBufferExtension.swift */,
+				5A7261142386420E004A3559 /* UIKitExtension.swift */,
+				5A7261122386418B004A3559 /* TFLiteExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AA9AC592212D39FC000B4E9D = {
+			isa = PBXGroup;
+			children = (
+				AA9AC59D212D39FC000B4E9D /* HandSegmentation */,
+				AA9AC59C212D39FC000B4E9D /* Products */,
+				9D9719774F9F8437868BF530 /* Pods */,
+				9D136F869057C25AFCCF626F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AA9AC59C212D39FC000B4E9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA9AC59B212D39FC000B4E9D /* HandSegmentation.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA9AC59D212D39FC000B4E9D /* HandSegmentation */ = {
+			isa = PBXGroup;
+			children = (
+				AAB1116F21512383008C215D /* ImageSegmentator */,
+				AA9AC5D4212D43E0000B4E9D /* Camera Feed */,
+				AA9AC5D1212D43BD000B4E9D /* ViewControllers */,
+				AA756E672150CD7C004BB0BC /* Extensions */,
+				AA09263B212D730700D5890F /* Model */,
+				AA9AC59E212D39FC000B4E9D /* AppDelegate.swift */,
+				AA9AC5A2212D39FC000B4E9D /* Main.storyboard */,
+				AA9AC5A5212D39FD000B4E9D /* Assets.xcassets */,
+				AA9AC5A7212D39FD000B4E9D /* LaunchScreen.storyboard */,
+				AA9AC5AA212D39FD000B4E9D /* Info.plist */,
+			);
+			path = HandSegmentation;
+			sourceTree = "<group>";
+		};
+		AA9AC5D1212D43BD000B4E9D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AA9AC5E1212D4520000B4E9D /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AA9AC5D4212D43E0000B4E9D /* Camera Feed */ = {
+			isa = PBXGroup;
+			children = (
+				AA756E642150C996004BB0BC /* CameraFeedManager.swift */,
+				AA9AC5D5212D43E0000B4E9D /* PreviewView.swift */,
+			);
+			path = "Camera Feed";
+			sourceTree = "<group>";
+		};
+		AAB1116F21512383008C215D /* ImageSegmentator */ = {
+			isa = PBXGroup;
+			children = (
+				5ABC9C5B2385DE820022EA9B /* ImageSegmentator.swift */,
+			);
+			path = ImageSegmentator;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA9AC59A212D39FC000B4E9D /* HandSegmentation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA9AC5C3212D39FD000B4E9D /* Build configuration list for PBXNativeTarget "HandSegmentation" */;
+			buildPhases = (
+				9E9748D56A6BC160CBF986BD /* [CP] Check Pods Manifest.lock */,
+				AA9AC597212D39FC000B4E9D /* Sources */,
+				AA9AC598212D39FC000B4E9D /* Frameworks */,
+				AA9AC599212D39FC000B4E9D /* Resources */,
+				5A7039AA2389E35E0026AFB9 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HandSegmentation;
+			productName = ObjectDetection;
+			productReference = AA9AC59B212D39FC000B4E9D /* HandSegmentation.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA9AC593212D39FC000B4E9D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Y Media Labs";
+				TargetAttributes = {
+					AA9AC59A212D39FC000B4E9D = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1120;
+					};
+				};
+			};
+			buildConfigurationList = AA9AC596212D39FC000B4E9D /* Build configuration list for PBXProject "HandSegmentation" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA9AC592212D39FC000B4E9D;
+			productRefGroup = AA9AC59C212D39FC000B4E9D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA9AC59A212D39FC000B4E9D /* HandSegmentation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA9AC599212D39FC000B4E9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA9AC5A9212D39FD000B4E9D /* LaunchScreen.storyboard in Resources */,
+				AA9AC5A6212D39FD000B4E9D /* Assets.xcassets in Resources */,
+				5A7261192387829E004A3559 /* hands_labels.json in Resources */,
+				AA9AC5A4212D39FC000B4E9D /* Main.storyboard in Resources */,
+				5AE934A32389DC0400614565 /* hands_finetunning_mobilenetv2_2019-11-20 01_54_18.774101.tflite in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9E9748D56A6BC160CBF986BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ObjectDetection-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA9AC597212D39FC000B4E9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA9AC5E2212D4520000B4E9D /* ViewController.swift in Sources */,
+				AA756E652150C996004BB0BC /* CameraFeedManager.swift in Sources */,
+				5A7261152386420E004A3559 /* UIKitExtension.swift in Sources */,
+				5A7261132386418B004A3559 /* TFLiteExtension.swift in Sources */,
+				AAAB09702189838A0015A1F2 /* CVPixelBufferExtension.swift in Sources */,
+				AA9AC59F212D39FC000B4E9D /* AppDelegate.swift in Sources */,
+				AA9AC5D7212D43E0000B4E9D /* PreviewView.swift in Sources */,
+				5ABC9C5C2385DE820022EA9B /* ImageSegmentator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AA9AC5A2212D39FC000B4E9D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA9AC5A3212D39FC000B4E9D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AA9AC5A7212D39FD000B4E9D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA9AC5A8212D39FD000B4E9D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA9AC5C1212D39FD000B4E9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		AA9AC5C2212D39FD000B4E9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA9AC5C4212D39FD000B4E9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 216119B21B85894DC4B75FB9 /* Pods-ObjectDetection.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PQCAW3L8N6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = HandSegmentation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.tensorflow.examples.ImageSegmentation-bernardo-ruga";
+				PRODUCT_NAME = HandSegmentation;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA9AC5C5212D39FD000B4E9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E18C520932C79396E5DB283 /* Pods-ObjectDetection.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PQCAW3L8N6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = HandSegmentation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.tensorflow.examples.ImageSegmentation-bernardo-ruga";
+				PRODUCT_NAME = HandSegmentation;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA9AC596212D39FC000B4E9D /* Build configuration list for PBXProject "HandSegmentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA9AC5C1212D39FD000B4E9D /* Debug */,
+				AA9AC5C2212D39FD000B4E9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA9AC5C3212D39FD000B4E9D /* Build configuration list for PBXNativeTarget "HandSegmentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA9AC5C4212D39FD000B4E9D /* Debug */,
+				AA9AC5C5212D39FD000B4E9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA9AC593212D39FC000B4E9D /* Project object */;
+}

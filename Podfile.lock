@@ -1,0 +1,20 @@
+PODS:
+  - TensorFlowLiteC (0.0.1-nightly.20191118)
+  - TensorFlowLiteSwift (0.0.1-nightly):
+    - TensorFlowLiteC (~> 0.0.1-nightly)
+
+DEPENDENCIES:
+  - TensorFlowLiteSwift (= 0.0.1-nightly)
+
+SPEC REPOS:
+  trunk:
+    - TensorFlowLiteC
+    - TensorFlowLiteSwift
+
+SPEC CHECKSUMS:
+  TensorFlowLiteC: 3bb8452bba5f05de261d05dec8bd1d868ff63baa
+  TensorFlowLiteSwift: 1db618cb4fd98077b679ff75911771e25a6e0d14
+
+PODFILE CHECKSUM: 934d35b5fa3afd7e460b890e5b5ba35876a4d826
+
+COCOAPODS: 1.8.4
